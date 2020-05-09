@@ -82,23 +82,29 @@ body{
         justify-content: center !important;
 }
 }
+@media (max-width: 479px){
+    .windows .container .list {
+        width: 95%;
+        }}
 .windows .container .list .item {
     width: 19%;
     text-align: center;
     border: 1px solid #d9d9d9;
 }
-@media (max-width: 545px){
-.windows .container .list .item {
-    width: 49%;
-}}
+
 @media (max-width: 960px) {
 .windows .container .list .item {
-    width: 35%;
+    width: 43%;
     border: 1px solid #d9d9d9;
     margin-bottom: 30px;
     margin-right:4px;
 }
 }
+
+@media (max-width: 400px){
+    .windows .container .list .item {
+        width: 66%;
+    }}
 a {
     text-decoration: none;
 }
@@ -190,6 +196,9 @@ margin: 0;
     width: 100%;
     margin-bottom: 75px;
 }}
+.calculation .container .flex .col img {
+    width: 100%;
+}
 @media (max-width: 768px){
 .calculation .container .flex .col img {
     width: 100%;
