@@ -1,135 +1,172 @@
-body{
+body
+{
     max-width: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: "MuseoSans",sans-serif;
+    font-family: "MuseoSans";
     min-width: 320px;
     overflow: visible!important;
 }
-.villa {
-    padding-top: 55px;
+.villa 
+{
     padding-bottom: 85px;
     margin-bottom: 60px;
     background-color: #ffffff
 }
-.container {
-    max-width: 1320px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+.container 
+{
+    max-width: 2000px;
+   margin-left: 80px;
+   margin-right: 80px;   
 }
-@media(max-width:960px){
-.container {   
-    padding-left: 10px;
-    padding-right: 10px;   
+@media(max-width:1200px){
+.container 
+{   
+    margin-left: 40px;
+    margin-right: 40px;   
 }}
-.tittle1{
-    font-family: "MuseoSans",sans-serif;
-    font-size: 35px;
+@media(max-width:1000px){
+.container 
+{   
+    margin-left: 20px;
+    margin-right: 20px;   
+}}
+@media(max-width:960px){
+.container 
+{   
+    margin-left: 50px;
+    margin-right: 50px;   
+}}
+@media(max-width:900px){
+.container 
+{   
+    margin-left: 5px;
+    margin-right: 5px;   
+}}
+.tittle1
+{
+    font-family: "MuseoSans";
+    font-size: 45px;
     line-height: 1.4;
-    color: #1c1c1c;
-    padding-left: 20px;
-    margin: 0;
+    color: #1c1c1c; 
  }
+ @media(max-width:1200px){
+.tittle1
+{
+    font-size: 35px;    
+    line-height: 1.3;
+ }}
  @media(max-width:960px){
-    .tittle1{
-    font-size: 20px;    
+.tittle1
+{
+    font-size: 38px;    
+    line-height: 1.2;
+    padding-left: 120px;  
  }}
- @media(max-width:700px){
-    .tittle1{
-    font-size: 30px;  
-    text-align: center; 
+ @media(max-width:900px){
+.tittle1
+{
+    font-size: 35px;    
+    line-height: 1.2;
+    padding-left: 10px;     
  }}
- .villa .container .item {
+.villa .container .item 
+{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 35px;
+    flex-wrap: wrap;   
 }
-@media (max-width: 700px){
-    .villa .container .item {
-        flex-direction: column;
-        align-content: center;
-        
+@media (max-width: 960px){
+.villa .container .item 
+{
+    flex-direction: column;
+    padding-left: 120px; 
 }}
-.villa .container .item .list {
+@media (max-width: 900px){
+.villa .container .item 
+{
+    flex-direction: column;
+    padding-left: 10px; 
+    padding-right: 10px;
+}}
+.villa .container .item .list 
+{
     position: relative;
-    width:32%;
-    border: 1px solid rgb(245, 245, 245);
+    width: calc(1/3*100% - 10px);;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 5px 5px  5px  5px;
 }
-@media(max-width:960px){
-.villa .container .item .list {  
-    width:32%;
+@media(max-width:1130px){
+.villa .container .item .list 
+{  
+    width: calc(1/3*101% - 10px);
 }}
-@media (max-width:700px){
-    .villa .container .item .list {
-        width: 75%;
-        margin-bottom:35px;
+@media (max-width:960px){
+.villa .container .item .list 
+{
+    width: 85%;
+    margin-bottom:35px;     
 }}
-@media (max-width: 550px){
-    .villa .container .item .list {
-        width: 90%;
+@media (max-width:900px){
+.villa .container .item .list 
+{
+    width: 100%;
+    margin-bottom:35px;     
 }}
-@media (max-width: 500px){
-    .villa .container .item .list {
-        width: 100%;
-    }}
 .villa .container .item .list a img 
 {
   width: 100%; 
-  height: 250px;
+  height: 350px;
   border-radius: 5px 5px 0 0;
  
 }
-@media(max-width:960px){
-.villa .container .item .list a img {
-    height: 200px;  
+@media(max-width:1200px){
+.villa .container .item .list a img 
+{
+    height: 330px;  
 }}
-@media(max-width:700px){
-    .villa .container .item .list a img {
-        height: 300px;  
-    }}
-.villa .container .item .list .income {
+@media(max-width:960px){
+.villa .container .item .list a img 
+{
+    height: 350px;  
+}}
+.villa .container .item .list .income 
+{
     position: absolute;
-    max-width: 220px;
+    max-width: 250px;
     text-align: center;
-    line-height: 30px;
-    top: calc(50% - 180px);
+    line-height: 35px;
+    top: calc(50% - 230px);
     right: 0;
     left: 0;
-    font-size: 14px;
+    font-size: 15px;
     color: white;
     margin-left: 0;
     background:linear-gradient(90deg, #f24841, #c82e86 44.2%, #a91abb 80.11%, #8000ff);
     border-radius: 0 5px 5px 0;
-
 }
-@media(max-width:960px){
-.villa .container .item .list .income {
-    max-width: 175px;
-    font-size: 11px;
-    line-height: 18px;
-    top: calc(50% - 160px);
+@media(max-width:1200px){
+.villa .container .item .list .income 
+{
+    max-width: 210px;
+    font-size: 13px;
+    line-height: 30px;
 }}
-@media(max-width:700px){
-    .villa .container .item .list .income {
-        max-width: 240px;
-        font-size: 15px;
-        line-height: 35px;
-        top: calc(50% - 190px);
-    }}
-.villa .container .item .list .like{
-    padding-bottom:0px; 
-    margin: 0px;
-}
-.villa .container .item .list .like button{
+@media(max-width:960px){
+.villa .container .item .list .income 
+{
+    max-width: 300px;
+    font-size: 17px;
+    line-height: 35px;
+    top: calc(40% - 180px);
+}}
+.villa .container .item .list .like button
+{
    position: absolute;
-   display:inline-block;
-   width:30% ;
-   height: 30px;
-   left: calc(100% - 35px);
+   width:10% ;
+   height: 40px;
+   left: calc(100% - 70px);
    top: 35px;
    right: 0;
    background-image:url(../images/icons-сердце.png);
@@ -138,166 +175,187 @@ body{
    background-color: transparent;
    border:0;
 }
-@media(max-width:960px){
-.villa .container .item .list .like button{
-    width:25%; 
-    height: 25px;
-    left: calc(100% - 30px);
-    top: 20px;
+@media(max-width:1200px){
+.villa .container .item .list .like button
+{
+    width:14%; 
+    top: 25px;   
 }}
-@media(max-width:700px){
-    .villa .container .item .list .like button{
-        width:35%; 
-        height: 40px;
-        left: calc(100% - 50px);
-        top: 37px;
-    }}
-.villa .container .item .list .like button:hover{
-    position: absolute;
-   display:inline-block;
-   width:30% ;
+@media(max-width:960px){
+.villa .container .item .list .like button
+{
+    width:35%; 
+    height: 45px;
+    left: calc(100% - 90px);
+    top: 39px;
+}}
+.villa .container .item .list .like button:hover
+{
+   position: absolute;
+   width:10% ;
    background-color: transparent;
-   height: 30px;
-   left: calc(100% - 35px);
+   height: 40px;
+   left: calc(100% - 70px);
    top: 35px;
    right: 0;
    background-image:url(../images/icons-сердце-1.png);
    background-repeat: no-repeat;
    background-size: contain;
 }
-@media(max-width:960px){
-    .villa .container .item .list .like button:hover{
-        width:25%; 
-        height: 25px;
-        left: calc(100% - 30px);
-        top: 20px;
+@media(max-width:1200px){
+.villa .container .item .list .like button:hover
+{
+    width:14%; 
+    top: 25px;
 }}
-@media(max-width:700px){
-    .villa .container .item .list .like button:hover{
-        width:35%; 
-        height: 40px;
-        left: calc(100% - 50px);
-        top: 37px;
-    }}
-.villa .container .item .list .like button:focus {
+@media(max-width:960px){
+.villa .container .item .list .like button:hover
+{
+    width:35%; 
+    height: 45px;
+    left: calc(100% - 90px);
+    top: 39px;
+}}
+.villa .container .item .list .like button:focus 
+{
     outline: none !important;
     background-image:url(../images/icons-сердце-1.png);   
 }
-.villa .container .item .list .after{
+.villa .container .item .list .after
+{
     border-radius: 0 0 5px 5px;
     border-top: transparent;
     padding-top:0px;
-    height: 170px;
+    height: 185px;
     margin:0;
 }
-@media(max-width:960px){
-    .villa .container .item .list .after{
-        height: 150px;}
-}
-.villa .container .item .list .after .paragraf {
-    padding:11px;
-    font-size: 14px;
-    font-weight: 500;
+.villa .container .item .list .after .paragraf 
+{
+    padding-left:20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: 300;
     margin-top: 0px;
 }
 @media(max-width:960px){
-    .villa .container .item .list .after .paragraf {
-        font-size: 11px; 
-        padding: 8px;    
-    }}
-@media(max-width:700px){
-        .villa .container .item .list .after .paragraf {
-            font-size: 15px; 
-            padding: 10px;    
-    }}
-.villa .container .item .list .after .paragraf a{
-    color:#40E0D0;
-    font-size:14px;
-    text-decoration:none;   
-}
-@media(max-width:960px){
-.villa .container .item .list .after .paragraf a{  
-    font-size:13px;
+.villa .container .item .list .after .paragraf 
+{
+    font-size: 16px; 
+    padding-left:20px;
+    margin-top: 10px;    
 }}
-@media(max-width:700px){
-    .villa .container .item .list .after .paragraf a{  
-        font-size:16px;
-    }}
-.villa .container .item .list .after .paragraf .before{
+@media(max-width:960px){
+.villa .container .item .list .after .paragraf 
+{
+    font-size: 16px; 
+    padding-left:20px;
+    margin-top: 10px;    
+}}
+@media(max-width:900px){
+.villa .container .item .list .after .paragraf 
+{
+    font-size: 19px;            
+}}
+.villa .container .item .list .after .paragraf a
+{
+    color:#40E0D0;
+    font-size:16px;
+    text-decoration:none;   
+    line-height: 1.3;   
+}
+
+@media(max-width:960px){
+.villa .container .item .list .after .paragraf a
+{  
+    font-size:18px;
+        
+}}
+ @media(max-width:900px){
+.villa .container .item .list .after .paragraf a
+{  
+    font-size:20px;
+            
+}}
+.villa .container .item .list .after .paragraf .before
+{
     padding-top: 15px;
     display: inline-block;
 }
-.villa .container .item .list .after .paragraf .before:before{
+.villa .container .item .list .after .paragraf .before:before
+{
     content: " ";
     background-image: url(../images/mapmarker.png);
     padding-left: 13px;
+    padding-right: 5px;
     background-repeat: no-repeat; 
-    background-size:12px 12px; 
+    background-size:13px 13px;
+    
 }
-@media(max-width:960px){
-    .villa .container .item .list .after .paragraf .before:before{
-        padding-left: 10px;  }}  
-@media(max-width:960px){
-    .villa .container .item .list .after .paragraf .before:before{
-        padding-left: 15px;  }}  
-.villa .container .item .list .after .paragraf .before1{
+.villa .container .item .list .after .paragraf .before1
+{
     padding-left: 10px;
     display: inline-block;
 }
 @media(max-width:960px){
-.villa .container .item .list .after .paragraf .before1{
-    padding-left: 0px;
+.villa .container .item .list .after .paragraf .before1
+{
+    padding-left: 60px;
 }}
-@media(max-width:700px){
-    .villa .container .item .list .after .paragraf .before1{
-        padding-left: 50px;
-    }}
-.villa .container .item .list .after .paragraf .before1:before{
+.villa .container .item .list .after .paragraf .before1:before
+{
     content: " ";
     background-image: url(../images/icons-компас.png);
     padding-left: 12px;
     background-repeat: no-repeat;  
     padding-right: 5px;
-    background-size:12px 12px;
+    background-size:13px 13px;
+}
+.villa .container .item .list .after .flex-row
+{
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap;  
 }
 @media(max-width:960px){
-    .villa .container .item .list .after .paragraf .before1:before{
-        padding-left: 12px;
-    }}
-@media(max-width:700px){
-    .villa .container .item .list .after .paragraf .before1:before{
-        padding-left: 15x;
-        padding-right: 3px;
-        }}
-.villa .container .item .list .after .price{
-    font-size:14px;
-    padding-top:5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left:15px;
+.villa .container .item .list .after .flex-row
+{ 
+    margin-top: 30px;
+}}
+@media(max-width:900px){
+.villa .container .item .list .after .flex-row
+{ 
+    margin-top: 10px;
+}}
+.villa .container .item .list .after .flex-row .price
+{
+    font-size:16px;
+    padding-top:11px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-left:17px;
     background-color:#40E0D0;
     color:white;
-    border-radius: 50px 50px 50px 50px;   
+    border-radius: 50px 50px 50px 50px;    
 }
 @media(max-width:960px){
-    .villa .container .item .list .after .price{
-        font-size:12px;
-        margin-left:8px;
-    }}
-@media(max-width:700px){
-    .villa .container .item .list .after .price{
-            font-size:18px;
-            margin-left:10px;
-        }}
-.villa .container .item .list .after .see{
-    font-size:14px;
-    padding-top:8px;
-    padding-bottom: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left:90px;
-    margin-right:90px;
+.villa .container .item .list .after .flex-row .price
+{
+    font-size:18px;
+    margin-left:20px;
+    padding-left: 14px;
+    padding-right: 14px;
+
+}}
+.villa .container .item .list .after .flex-row .see
+{
+    font-size:17px;
+    padding-top:11px;
+    padding-bottom: 11px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-left: auto;
+    margin-right: 20px;
     background-color:#40E0D0;
     color:white;
     border-radius: 50px 50px 50px 50px;
@@ -305,45 +363,19 @@ body{
     position: relative;
 }
 @media(max-width:960px){
- .villa .container .item .list .after .see{
-    font-size:12px;
-    padding-top:5px;
-    margin-left:27px;
-    padding-bottom:5px;
+.villa .container .item .list .after .flex-row .see
+{
+    font-size:18px;
+    padding-bottom:7px;
 }}
-@media(max-width:700px){
-    .villa .container .item .list .after .see{
-       font-size:18px;
-       padding-top:7px;
-       margin-left:170px;
-       padding-bottom:5px;
-   }}
-   @media(max-width:600px){
-    .villa .container .item .list .after .see{
-       margin-left:130px;
-      
-   }}
-   @media(max-width:550px){
-    .villa .container .item .list .after .see{
-       margin-left:190px;
-      
-   }}
-   @media(max-width:530px){
-    .villa .container .item .list .after .see{
-       margin-left:180px;
-      
-   }}
-.villa .container .item .list .after .see:after{
+.villa .container .item .list .after .flex-row .see:after
+{
     content: " ";
     background-image: url(../images/icons-eye.png);
-    padding-left: 15px;
-    margin-right:5px;
+    padding-left: 19px;
     margin-left:5px;
     background-repeat: no-repeat;  
+    background-size:20px 20px;
     
 }
-@media(max-width:700px){
-    .villa .container .item .list .after .see:after{
-      background-size: contain;
-      padding-left: 20px;
-   }}
+
