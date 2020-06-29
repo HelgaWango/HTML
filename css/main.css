@@ -1,12 +1,30 @@
 body
 {
-    max-width: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: "MuseoSans";
+    font-family: "MuseoSansMedium",sans-serif!important;;
     min-width: 320px;
     overflow: visible!important;
+}
+
+@font-face {
+    font-family: "MuseoSansLight";
+    src: url("../fonts/MuseoSansLight/MuseoSansLight.eot");
+    src: url("../fonts/MuseoSansLight/MuseoSansLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MuseoSansLight/MuseoSansLight.woff") format("woff"),
+    url("../fonts/MuseoSansLight/MuseoSansLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MuseoSansMedium";
+    src: url("../fonts/MuseoSansMedium/MuseoSansMedium.eot");
+    src: url("../fonts/MuseoSansMedium/MuseoSansMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MuseoSansMedium/MuseoSansMedium.woff") format("woff"),
+    url("../fonts/MuseoSansMedium/MuseoSansMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 .villa 
 {
@@ -16,271 +34,181 @@ body
 }
 .container 
 {
-    max-width: 2000px;
-   margin-left: 80px;
-   margin-right: 80px;   
+    max-width: 1422px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;   
 }
-@media(max-width:1200px){
-.container 
-{   
-    margin-left: 40px;
-    margin-right: 40px;   
-}}
-@media(max-width:1000px){
-.container 
-{   
-    margin-left: 20px;
-    margin-right: 20px;   
-}}
-@media(max-width:960px){
-.container 
-{   
-    margin-left: 50px;
-    margin-right: 50px;   
-}}
-@media(max-width:900px){
-.container 
-{   
-    margin-left: 5px;
-    margin-right: 5px;   
-}}
 .tittle1
 {
-    font-family: "MuseoSans";
-    font-size: 45px;
+    
+    font-size: 40px;
+    font-weight: 900;
     line-height: 1.4;
-    color: #1c1c1c; 
+    color: #313131; 
+    padding-left: 30px;
+    padding-right: 30px;
  }
- @media(max-width:1200px){
-.tittle1
-{
-    font-size: 35px;    
-    line-height: 1.3;
- }}
- @media(max-width:960px){
-.tittle1
-{
-    font-size: 38px;    
-    line-height: 1.2;
-    padding-left: 120px;  
- }}
- @media(max-width:900px){
-.tittle1
-{
-    font-size: 35px;    
-    line-height: 1.2;
-    padding-left: 10px;     
+ @media (max-width: 768px){
+ .tittle1{
+     font-size: 32px;
+     padding-left: 0;
+     padding-right: 0;
  }}
 .villa .container .item 
 {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;   
+    
+    flex-wrap: wrap;  
+    
+    padding-left: 30px;
+    padding-right: 30px; 
 }
-@media (max-width: 960px){
+@media (max-width: 768px){
 .villa .container .item 
 {
-    flex-direction: column;
-    padding-left: 120px; 
-}}
-@media (max-width: 900px){
-.villa .container .item 
-{
-    flex-direction: column;
-    padding-left: 10px; 
-    padding-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
 }}
 .villa .container .item .list 
 {
     position: relative;
-    width: calc(1/3*100% - 10px);;
-    border: 1px solid rgb(240, 240, 240);
-    border-radius: 5px 5px  5px  5px;
+    width:30%;
+    border: 1px solid #eee;
+    border-radius: 7px;
+    margin-left: .50%;
+    margin-right: .50%;
+    margin-bottom: 30px;
 }
-@media(max-width:1130px){
-.villa .container .item .list 
-{  
-    width: calc(1/3*101% - 10px);
-}}
+
 @media (max-width:960px){
 .villa .container .item .list 
 {
-    width: 85%;
-    margin-bottom:35px;     
+    width: 43%;
+    margin-left: 1%;
+    margin-right: 1%;     
 }}
-@media (max-width:900px){
-.villa .container .item .list 
-{
+@media (max-width: 768px){
+.villa .container .item .list {
     width: 100%;
-    margin-bottom:35px;     
 }}
 .villa .container .item .list a img 
 {
   width: 100%; 
-  height: 350px;
   border-radius: 5px 5px 0 0;
+  height: 300px;
+
  
 }
-@media(max-width:1200px){
-.villa .container .item .list a img 
+@media (max-width: 768px){
+    .villa .container .item .list a img 
 {
-    height: 330px;  
+    height: 500px;
 }}
-@media(max-width:960px){
-.villa .container .item .list a img 
+@media (max-width: 500px){
+    .villa .container .item .list a img 
 {
-    height: 350px;  
+    height: 300px;
 }}
+
 .villa .container .item .list .income 
 {
     position: absolute;
     max-width: 250px;
     text-align: center;
-    line-height: 35px;
-    top: calc(50% - 230px);
+    line-height: 30px;
+    letter-spacing: .25px;
+    top: 25px;
     right: 0;
     left: 0;
-    font-size: 15px;
+    padding: 5px 20px;
+    font-size: 14px;
     color: white;
     margin-left: 0;
     background:linear-gradient(90deg, #f24841, #c82e86 44.2%, #a91abb 80.11%, #8000ff);
     border-radius: 0 5px 5px 0;
 }
-@media(max-width:1200px){
-.villa .container .item .list .income 
-{
-    max-width: 210px;
-    font-size: 13px;
-    line-height: 30px;
-}}
-@media(max-width:960px){
-.villa .container .item .list .income 
-{
-    max-width: 300px;
-    font-size: 17px;
-    line-height: 35px;
-    top: calc(40% - 180px);
-}}
+
 .villa .container .item .list .like button
 {
    position: absolute;
-   width:10% ;
+   width:40px ;
    height: 40px;
-   left: calc(100% - 70px);
-   top: 35px;
-   right: 0;
-   background-image:url(../images/icons-сердце.png);
+   top: 25px;
+   right: 15px;
+   margin-right: 10px;
+   background-image:url(../images/icons-heart.png);
    background-repeat: no-repeat;
    background-size: contain;
    background-color: transparent;
    border:0;
+
 }
-@media(max-width:1200px){
-.villa .container .item .list .like button
-{
-    width:14%; 
-    top: 25px;   
-}}
-@media(max-width:960px){
-.villa .container .item .list .like button
-{
-    width:35%; 
-    height: 45px;
-    left: calc(100% - 90px);
-    top: 39px;
-}}
+
 .villa .container .item .list .like button:hover
 {
    position: absolute;
-   width:10% ;
+   width:40px ;
    background-color: transparent;
    height: 40px;
-   left: calc(100% - 70px);
-   top: 35px;
-   right: 0;
-   background-image:url(../images/icons-сердце-1.png);
+   top: 25px;
+   right: 15px;
+   margin-right: 10px;
+   background-image:url(../images/icons-heart-1.png);
    background-repeat: no-repeat;
    background-size: contain;
 }
-@media(max-width:1200px){
-.villa .container .item .list .like button:hover
-{
-    width:14%; 
-    top: 25px;
-}}
-@media(max-width:960px){
-.villa .container .item .list .like button:hover
-{
-    width:35%; 
-    height: 45px;
-    left: calc(100% - 90px);
-    top: 39px;
-}}
+
 .villa .container .item .list .like button:focus 
 {
     outline: none !important;
-    background-image:url(../images/icons-сердце-1.png);   
+    background-image:url(../images/icons-heart-1.png);   
 }
 .villa .container .item .list .after
 {
-    border-radius: 0 0 5px 5px;
     border-top: transparent;
     padding-top:0px;
-    height: 185px;
+    
+    
     margin:0;
 }
-.villa .container .item .list .after .paragraf 
+.villa .container .item .list .after 
 {
-    padding-left:20px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+   padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px; 
     font-size: 15px;
     font-weight: 300;
     margin-top: 0px;
+    font-family: "MuseoSansLight";
 }
-@media(max-width:960px){
-.villa .container .item .list .after .paragraf 
+h3
 {
-    font-size: 16px; 
-    padding-left:20px;
-    margin-top: 10px;    
-}}
-@media(max-width:960px){
-.villa .container .item .list .after .paragraf 
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.title a
 {
-    font-size: 16px; 
-    padding-left:20px;
-    margin-top: 10px;    
-}}
-@media(max-width:900px){
-.villa .container .item .list .after .paragraf 
-{
-    font-size: 19px;            
-}}
-.villa .container .item .list .after .paragraf a
-{
-    color:#40E0D0;
-    font-size:16px;
+    color:#33cfc3;
+    font-size:15px;
+    font-weight: 700;
     text-decoration:none;   
-    line-height: 1.3;   
+    letter-spacing: .35px;  
 }
-
-@media(max-width:960px){
-.villa .container .item .list .after .paragraf a
-{  
-    font-size:18px;
-        
-}}
- @media(max-width:900px){
-.villa .container .item .list .after .paragraf a
-{  
-    font-size:20px;
-            
-}}
+.villa .container .item .list .after .paragraf span
+{
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.55;
+    color: #657195;
+}
 .villa .container .item .list .after .paragraf .before
 {
-    padding-top: 15px;
     display: inline-block;
+    margin-right: 12px;
 }
 .villa .container .item .list .after .paragraf .before:before
 {
@@ -297,15 +225,10 @@ body
     padding-left: 10px;
     display: inline-block;
 }
-@media(max-width:960px){
-.villa .container .item .list .after .paragraf .before1
-{
-    padding-left: 60px;
-}}
 .villa .container .item .list .after .paragraf .before1:before
 {
     content: " ";
-    background-image: url(../images/icons-компас.png);
+    background-image: url(../images/icons-compass.png);
     padding-left: 12px;
     background-repeat: no-repeat;  
     padding-right: 5px;
@@ -313,61 +236,32 @@ body
 }
 .villa .container .item .list .after .flex-row
 {
-    display: flex; 
-    justify-content: space-between; 
-    flex-wrap: wrap;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px; 
 }
-@media(max-width:960px){
-.villa .container .item .list .after .flex-row
-{ 
-    margin-top: 30px;
-}}
-@media(max-width:900px){
-.villa .container .item .list .after .flex-row
-{ 
-    margin-top: 10px;
-}}
 .villa .container .item .list .after .flex-row .price
 {
-    font-size:16px;
-    padding-top:11px;
-    padding-left: 11px;
-    padding-right: 11px;
-    margin-left:17px;
-    background-color:#40E0D0;
-    color:white;
-    border-radius: 50px 50px 50px 50px;    
+    display: inline-block;
+    padding: 9px 17px;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #33cfc3;
 }
-@media(max-width:960px){
-.villa .container .item .list .after .flex-row .price
-{
-    font-size:18px;
-    margin-left:20px;
-    padding-left: 14px;
-    padding-right: 14px;
-
-}}
 .villa .container .item .list .after .flex-row .see
 {
-    font-size:17px;
-    padding-top:11px;
-    padding-bottom: 11px;
-    padding-left: 18px;
-    padding-right: 18px;
-    margin-left: auto;
-    margin-right: 20px;
-    background-color:#40E0D0;
-    color:white;
-    border-radius: 50px 50px 50px 50px;
-    text-decoration:none;
     position: relative;
+    font-weight: 500;
+    border-radius: 25px;
+    background-color: #33cfc3;
+    color: #fff;
+    height: 46px;
+    font-size: 16px;
+    line-height: 44px;
+    padding: 0 25px;
+    text-decoration:none;   
 }
-@media(max-width:960px){
-.villa .container .item .list .after .flex-row .see
-{
-    font-size:18px;
-    padding-bottom:7px;
-}}
 .villa .container .item .list .after .flex-row .see:after
 {
     content: " ";
