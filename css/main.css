@@ -1,0 +1,475 @@
+ body
+ {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Purissima Bold ",sans-serif!important;;
+    min-width: 320px;
+    overflow: visible!important;
+    
+ }
+ .skills
+ {
+    background-color: #ffffff;
+    padding-left:100px;
+    padding-right: 100px;
+    
+ }
+ @media (max-width:960px){
+.skills
+    {
+    padding-left:0px;
+    padding-right: 0px; 
+}}
+ .container
+ {
+    max-width: 1422px;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: #48D1CC;
+    
+ }
+
+ .skills .container .item
+ {
+     margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+ }
+.skills .container .item .list1
+{
+background-color:	#F5F5F5;
+width:50%;
+height: 420px;
+}
+@media (max-width: 768px){
+.skills .container .item .list1
+{
+height:400px;
+}}
+
+ progress {
+   
+    -webkit-appearance: none; 
+    margin-top: 10px;
+    background: #E6E6FA;
+    border: 0;
+    width: 80%;
+    height: 5px;
+    margin-bottom:30px;
+ }
+ progress::-moz-progress-bar
+{
+    background: #48D1CC;
+}
+progress::-webkit-progress-bar
+{
+    background: transparent;
+}
+progress::-webkit-progress-value
+{
+    background: #48D1CC;
+}
+.skills .container .item .list1 h2
+{   padding-top: 80px;
+    font-size: 28px;
+    padding-left: 100px ;
+}
+@media (max-width: 768px){
+    .skills .container .item .list1 h2{
+padding-left: 50px;
+    }
+}
+.skills .container .item .list1 p{
+
+    font-size: 10px;
+    font-weight: 300;
+    padding-left: 100px ;
+}
+@media (max-width: 768px){
+    .skills .container .item .list1 p{
+padding-left: 50px;
+    }}
+.skills .container .item .list1 span{
+    padding-left:20px;
+}
+.skills .container .item .list2{
+    width:50%;
+}
+.skills .container .item .list2 .img
+{
+ width:100%;
+ height:420px;
+}
+@media (max-width: 768px){
+    .skills .container .item .list2 .img{
+        height:400px; 
+    }} 
+.skills .container .list 
+{
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-top: 0px;
+    height:245px ;
+    
+}
+@media (max-width:960px){
+    .skills .container .list {
+        padding-left: 40px;
+        padding-right: 20px;
+    }}
+.skills .container .list .item
+{
+    
+    background-color: #48D1CC;
+    width:25%;
+    color:#ffffff;
+    
+    
+}
+
+.skills .container .list .item p{
+    margin-top:5px;
+}
+@media (max-width:960px){
+    .skills .container .list .item p{
+        width:100px;}
+}
+.skills .container .list .item .one{
+    content: " ";
+    background-image: url(../images/portfel.png);
+    padding-left: 40px;
+    background-repeat: no-repeat;  
+    padding-right: 20px;
+    
+    
+    background-size:40px 40px;
+}
+.skills .container .list .item .two{
+    content: " ";
+    background-image: url(../images/clock.png);
+    padding-left: 40px;
+    background-repeat: no-repeat;  
+    padding-right: 20px;
+    
+   
+    background-size:40px 40px; 
+}
+.skills .container .list .item .three{
+    content: " ";
+    background-image: url(../images/star.png);
+    padding-left: 40px;
+    background-repeat: no-repeat;  
+    padding-right: 20px;
+    
+   
+    background-size:50px 50px; 
+}
+.skills .container .list .item .four{
+    content: " ";
+    background-image: url(../images/heart.png);
+    padding-left: 40px;
+    background-repeat: no-repeat;  
+    padding-right: 20px;
+    
+   
+    background-size:40px 40px; 
+}
+.skills .container .photos 
+{
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    padding-top: 0px;
+    height:550px; 
+    max-width:1422px;
+    
+}
+
+@media (max-width:960px){
+    .skills .container .photos {
+       height:480px;
+        padding-right: 0;
+        padding-left: 0;
+    } }  
+@media (max-width:768px){
+        .skills .container .photos {
+           height:320px
+        } }  
+.skills .container .photos .list{
+   width: 25%;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;  
+    position: relative;
+}
+@media (max-width:768px){
+    .skills .container .photos .list{
+        width:241.5px;
+        height:235px;
+    }}
+.skills .container .photos .list .span1
+{
+    padding-left: 155px;
+   padding-right:206px;
+   padding-bottom:280px;
+   background-image: url(../images/braslet.jpg);
+   background-repeat: no-repeat;
+   background-size:360px 300px; 
+}
+@media (max-width:960px){
+    .skills .container .photos .list .span1
+    {
+        background-image: url(../images/braslet.jpg);
+        background-repeat: no-repeat;
+        background-size:260px 245px; 
+        padding-left: 110px;
+        padding-right:124px;
+        padding-bottom:260px;
+    }}   
+@media (max-width:768px){  
+    .skills .container .photos .list .span1
+    {
+        background-image: url(../images/braslet.jpg);
+        background-repeat: no-repeat; 
+        background-size:262px 235px;
+        padding-left:121px;
+        padding-right:126px;
+        
+    }
+    }
+.skills .container .photos .list .span2
+{
+    padding-left: 150px;
+   padding-right:205px;
+   padding-bottom:280px;
+    background-image: url(../images/phone.jpg);
+    background-repeat: no-repeat;  
+    background-size:360px 300px; 
+ }
+ @media (max-width:960px){
+    .skills .container .photos .list .span2
+    {
+        background-image: url(../images/phone.jpg);
+        background-repeat: no-repeat;
+        background-size:260px 245px; 
+        padding-left: 110px;
+        padding-right:125px;
+        padding-bottom: 100px;
+    }}
+    @media (max-width:768px){  
+        .skills .container .photos .list .span2
+        {
+            background-image: url(../images/phone.jpg);
+            background-repeat: no-repeat; 
+            background-size:260px 235px;
+            padding-left: 121px;
+            padding-right:125px;
+        }
+        }
+ .skills .container .photos .list .span3{
+    padding-left: 150px;
+    padding-right:206px;
+    padding-bottom:280px;
+    background-image: url(../images/paper\ box.jpg);
+    background-repeat: no-repeat;  
+    background-size:359px 300px; 
+ }
+ @media (max-width:960px){
+    .skills .container .photos .list .span3
+    {
+        background-image: url(../images/paper\ box.jpg);
+        background-repeat: no-repeat;
+        background-size:260px 235px; 
+        padding-left: 110px;
+        padding-right:125px;
+        padding-bottom:260px;
+    }}
+@media (max-width:768px){  
+    .skills .container .photos .list .span3
+    {
+            background-image: url(../images/paper\ box.jpg);
+            background-repeat: no-repeat; 
+            background-size:260px 235px;
+            padding-left: 120px;
+            padding-right:122px;
+    }}
+ .skills .container .photos .list .span4{
+    padding-left: 150px;
+    padding-right:205px;
+    padding-bottom:280px;
+    background-image: url(../images/card.jpg);
+    background-repeat: no-repeat;  
+    background-size:359px 300px; 
+ }
+ @media (max-width:960px){
+    .skills .container .photos .list .span4
+    {   background-image: url(../images/card.jpg);
+        background-repeat: no-repeat;
+        background-size:240px 235px; 
+        padding-left: 110px;
+        padding-right:124px;
+        padding-bottom:260px;
+    }}   
+    @media (max-width:768px){  
+        .skills .container .photos .list .span4
+        {
+                background-image: url(../images/card.jpg);
+                background-repeat: no-repeat; 
+                background-size:260px 235px;
+                padding-left: 122px;
+                padding-right:125px;
+                
+        }}
+ .skills .container .photos .list .span5{
+    padding-left: 150px;
+    padding-right:206px;
+    padding-bottom:280px;
+    background-image: url(../images/glass.jpg);
+    background-repeat: no-repeat;  
+    background-size:360px 300px; 
+ }
+ @media (max-width:960px){
+    .skills .container .photos .list .span5
+    {   background-image: url(../images/glass.jpg);
+        background-repeat: no-repeat;
+        background-size:240px 245px; 
+        padding-left: 110px;
+        padding-right:124px;
+        padding-bottom:260px;
+    }} 
+@media (max-width:768px){  
+    .skills .container .photos .list .span5
+    {
+                background-image: url(../images/glass.jpg);
+                background-repeat: no-repeat; 
+                background-size:260px 235px;
+                padding-left: 122px;
+                padding-right:125px;
+    }}  
+ .skills .container .photos .list .span6{
+    padding-left: 150px;
+    padding-right:205px;
+    padding-bottom:280px;
+    background-image: url(../images/paper\ box\ second.jpg);
+    background-repeat: no-repeat;  
+    background-size:360px 300px; 
+ }
+ 
+ @media (max-width:960px){
+    .skills .container .photos .list .span6
+    {   background-image: url(../images/paper\ box\ second.jpg);
+        background-repeat: no-repeat;
+        background-size:240px 245px; 
+        padding-left: 110px;
+        padding-right:125px;
+        padding-bottom:260px;
+    }}  
+    @media (max-width:768px){  
+        .skills .container .photos .list .span6
+        {
+                    background-image: url(../images/paper\ box\ second.jpg);
+                    background-repeat: no-repeat; 
+                    background-size:260px 235px;
+                    padding-left: 121px;
+                    padding-right:122px;
+        }}  
+ .skills .container .photos .list .span7{
+    padding-left: 150px;
+    padding-right:206px;
+    padding-bottom:280px;
+    background-image: url(../images/honey.jpg);
+    background-repeat: no-repeat;  
+    background-size:360px 300px; 
+ }
+ @media (max-width:960px){
+    .skills .container .photos .list .span7
+    {   background-image: url(../images/.jpg);
+        background-repeat: no-repeat;
+        background-size:240px 245px; 
+        padding-left: 111px;
+        padding-right:125px;
+        padding-bottom:260px;
+    }} 
+@media (max-width:768px){  
+     .skills .container .photos .list .span7
+        {
+                    background-image: url(../images/honey.jpg);
+                    background-repeat: no-repeat; 
+                    background-size:260px 235px;
+                    padding-left: 122px;
+                    padding-right:125px;
+    }}    
+ .skills .container .photos .list .span8{
+
+    padding-left: 150px;
+    padding-right:205px;
+    padding-bottom:280px;
+    background-image: url(../images/flacon.jpg);
+    background-repeat: no-repeat;  
+    background-size:360px 300px;
+    margin-bottom: 200px; 
+ }
+ @media (max-width:960px){
+    .skills .container .photos .list .span8
+    {   background-image: url(../images/flacon.jpg);
+        background-repeat: no-repeat;
+        background-size:240px 245px; 
+        padding-left: 110px;
+        padding-right:124px;
+        padding-bottom:260px;
+    }} 
+    @media (max-width:768px){  
+        .skills .container .photos .list .span8
+           {
+                       background-image: url(../images/flacon.jpg);
+                       background-repeat: no-repeat; 
+                       background-size:260px 235px;
+                       padding-left: 122px;
+                       padding-right:125px;
+       }}   
+ .descr{ 
+     position: absolute;
+     left:0;
+     width:100%;
+     height:280px;
+     background-color: rgba(0,0,0,.5);
+     top: 0px;
+     display:none;
+     transition: all .25s;  
+ }
+ @media (max-width:960px){
+    .descr{
+        height:245px; 
+        background-color: rgba(0,0,0,.5);  
+        transition: all .25s;
+    }}  
+ @media (max-width:768px){
+        .descr{
+            height:235px; 
+            background-color: rgba(0,0,0,.5);  
+            transition: all .25s;
+        }}   
+ .descr img{
+     width: 60px;
+     height:60px;
+    padding-top: 120px;
+    padding-left: 150px;
+ }
+ @media (max-width:960px){
+    .descr img{
+        padding-top: 90px;
+        padding-left: 90px;     
+ }}
+ .skills .container .photos .list:hover .descr
+{
+display: block;
+}
